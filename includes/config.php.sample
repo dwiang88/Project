@@ -1,0 +1,25 @@
+<?php
+
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+error_reporting(0);
+
+define('DB_HOST', 'localhost');
+define('DB_NAME', '');
+define('DB_USER','');
+define('DB_PWD','');
+
+define('BASE_URL','http://projects.yourdomain.com/');
+
+define('PROOF_BASE_URL','http://projects.yourdomain.com/proofs/');
+
+define('BASE_PATH','/full/path/to/projects/');
+
+//list of statuses
+//also make sure there is a corresponding CSS class style in styles.css
+$statuses = array('To_Quote','Quoted','Pending','Waiting_for_Brief','Ready_to_Start','In_Progress','With_Client','On_Hold','Completed'); 
+
+$workable = array('Briefed','In_Progress','Ready_to_Start','Corrections_in_Progress');
+
+//priorities
+$priorities = array('1. Urgent','2. High','3. Medium','4. Low');
